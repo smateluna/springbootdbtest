@@ -7,6 +7,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 @RestController
 public class HelloController {
 
+    private JdbcTemplate jdbcTemplate;
 	@GetMapping("/")
 	public String index() {
 		String sql = "SELECT DB_NAME() AS DataBaseName";
