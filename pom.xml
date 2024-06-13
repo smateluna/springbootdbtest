@@ -44,6 +44,13 @@
             <scope>test</scope>
         </dependency>
         <!-- end::tests[] -->
+
+        <dependency>
+            <groupId>net.sourceforge.jtds</groupId>
+            <artifactId>jtds</artifactId>
+            <version>1.2.6</version>
+        </dependency>
+
     </dependencies>
 
     <build>
