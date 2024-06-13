@@ -16,11 +16,4 @@ public class Application implements CommandLineRunner {
     public static void main (String[] args) {
         SpringApplication.run(Application.class, args);
     }
-
-    @Override
-    public void run(String... args) throws Exception {
-        String sql = "SELECT DB_NAME() AS DataBaseName";
-        String nombre = jdbcTemplate.queryForObject(sql, String.class);
-        System.out.println(nombre);
-    }
 }
