@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 @SpringBootApplication
-public class Application implements CommandLineRunner {
+public class Application {
 
     private JdbcTemplate jdbcTemplate;
 
